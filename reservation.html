@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keep Kool Resort | Reservation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    nav { background-color: #006994; text-align: center; padding: 10px; }
+    nav a { color: white; text-decoration: none; padding: 14px 20px; }
+    nav a:hover { background-color: #004d6d; }
+    section { padding: 20px; max-width: 600px; margin: auto; }
+    form { display: flex; flex-direction: column; }
+    input, select, textarea { margin-bottom: 10px; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 5px; }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="amenities.html">AMENITIES</a>
+    <a href="roomrate.html">ROOM RATE</a>
+    <a href="reservation.html">RESERVATION</a>
+    <a href="about.html">ABOUT US</a>
+  </nav>
+
+  <section>
+    <h2>Reservation Form</h2>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" required>
+
+      <label>Email Address:</label>
+      <input type="email" required>
+
+      <label>Room Type:</label>
+      <select>
+        <option>Standard Room</option>
+        <option>Deluxe Room</option>
+        <option>Family Villa</option>
+      </select>
+
+      <label>Number of Nights:</label>
+      <input type="number" min="1">
+
+      <label>Special Requests:</label>
+      <textarea rows="4"></textarea>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </section>
+</body>
+</html>
